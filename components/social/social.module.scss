@@ -1,0 +1,29 @@
+.Social {
+    list-style: none;
+    margin: 1rem auto;
+    padding: 0;
+    display: flex;
+    
+    li {
+        margin: 0 0.5rem;
+
+        a:hover svg {
+            fill: #a63bf8;
+        }
+    }
+
+    svg {
+        display: block;
+        width: clamp(1.8rem, 1.364rem + 2.18vw, 3rem);
+        fill: #222;
+        transition: 0.3s;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .Social {
+        svg {
+            fill: white;
+        }
+    }
+}

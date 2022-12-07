@@ -1,0 +1,25 @@
+.Skills {
+    list-style: none;
+    width: 100%;
+    max-width: 840px;
+    margin: 2rem auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+    font-size: clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem);
+
+    li {
+        background-color: #EEE;
+        border-radius: 0.4rem;
+        padding: 0.4rem 0.6rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .Skills li {
+        background-color: #333;
+    }
+}

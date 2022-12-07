@@ -1,0 +1,38 @@
+.Header {
+    h1, p {
+        text-align: center;
+    }
+    h1 {
+        --bg-size: 400%;
+        --color-one: #f81f01;
+        --color-two: #ee07e2;
+
+        margin: 0;
+        padding: 0 1rem;
+        line-height: 0.8;
+        font-size: clamp(3.75rem, 1.447rem + 7.37vw, 12.5rem);
+        font-style: normal;
+        font-weight: 800;
+        letter-spacing: -0.05em;
+        text-transform: uppercase;
+        background: linear-gradient(
+            90deg, var(--color-one), var(--color-two), var(--color-one)
+        ) 0 0 / var(--bg-size) 100%;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        animation: move-bg 8s infinite linear;
+    }
+
+    p {
+        margin: 2rem 0;
+        line-height: 1.5;
+        font-size: clamp(1rem, 0.77rem + 0.74vw, 1.875rem);
+    }
+}
+
+@keyframes move-bg {
+    to {
+        background-position: var(--bg-size) 0;
+    }
+}
