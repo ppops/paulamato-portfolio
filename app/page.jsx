@@ -1,3 +1,4 @@
+import Script from 'next/script'
 import Image from 'next/image'
 
 import Header from '/components/header/header'
@@ -12,6 +13,19 @@ import styles from './page.module.scss'
 export default function Home() {
     return (
         <main className={styles.Main}>
+            <Script
+                src="https://www.googletagmanager.com/gtag/js?id=UA-2205557-1"
+                strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+                {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){window.dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'UA-2205557-1');
+                `}
+            </Script>
             <div className={styles.Container}>
                 <Header />
                 <Social />
