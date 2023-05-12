@@ -14,7 +14,7 @@ export default function Home() {
     return (
         <main className={styles.Main}>
             <Script
-                src="https://www.googletagmanager.com/gtag/js?id=UA-2205557-1"
+                src="https://www.googletagmanager.com/gtag/js?id=G-V1M6JGFEBB"
                 strategy="afterInteractive"
             />
             <Script id="google-analytics" strategy="afterInteractive">
@@ -23,7 +23,7 @@ export default function Home() {
                     function gtag(){window.dataLayer.push(arguments);}
                     gtag('js', new Date());
 
-                    gtag('config', 'UA-2205557-1');
+                    gtag('config', 'G-V1M6JGFEBB');
                 `}
             </Script>
             <div className={styles.Container}>
