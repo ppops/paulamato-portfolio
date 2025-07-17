@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "add": "^2.0.6",
-    "eslint": "8.29.0",
+    "eslint": "^8.57.0",
     "eslint-config-next": "15.4.1",
     "next": "15.4.1",
     "react": "19.1.0",
