@@ -1,12 +1,13 @@
+import React from 'react'
 import Script from 'next/script'
 import Image from 'next/image'
 
-import Header from '/components/header/header'
-import Social from '/components/social/social'
-import Footer from '/components/footer/footer'
-import Skills from '/components/skills/skills'
+import Header from '@/components/header/header'
+import Social from '@/components/social/social'
+import Footer from '@/components/footer/footer'
+import Skills from '@/components/skills/skills'
 
-import Reykjavik from '/public/reykjavik.jpg'
+import Reykjavik from '@images/reykjavik.jpg'
 
 import styles from './page.module.scss'
 

@@ -1,4 +1,4 @@
-import {LinkedIn, GitHub, Facebook, Instagram, Twitter} from '/public/icons'
+import {LinkedIn, GitHub, Facebook, Instagram, Twitter} from '@images/icons'
 
 import styles from './social.module.scss'
 
